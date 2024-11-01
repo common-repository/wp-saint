@@ -1,0 +1,110 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.wp-saint-header-bg {
+  background: url(../images/back.jpg) repeat-x;
+  display: flex;
+  margin-top: 20px;
+}
+.wp-saint-header-bg img {
+  margin-left: auto;
+}
+
+.wp-saint-body {
+  max-width: 1200px;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 310px;
+}
+
+.form-table td p.wp-saint-adv-warning {
+  margin-top: 20px;
+}
+.form-table .description {
+  margin-top: 2px;
+}
+
+.wp-saint-spinner {
+  font-size: 13px !important;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen-Sans', sans-serif !important;
+  border: 0 !important;
+  margin: 0 !important;
+}
+.wp-saint-spinner:focus {
+  border: 0 !important; 
+  box-shadow: none !important;
+}
+.ui-widget.ui-widget-content {
+  border: 1px solid #7e8993 !important;
+  border-radius: 4px;
+}
+.ui-spinner a.ui-spinner-button.ui-spinner-up {
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  height: 14px;
+}
+.ui-spinner a.ui-spinner-button.ui-spinner-bottom {
+  border-radius: 0;
+  border-bottom-right-radius: 4px;
+  height: 14px;
+}
+
+.wp-saint-cb-container .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.wp-saint-cb-container .row label {
+  margin-left: 1.5em;
+}
+
+.wp-saint-cb-container .switcher-row {
+  margin: 1em 0;
+  overflow: hidden;
+}
+
+.wp-saint-error-msg {
+  color: #f30;
+  margin-top: 3px;
+}
+
+.wp-saint-hidden {
+  display: none;
+}
+
+.form-error,
+.wp-saint-error-field {
+  border-color: #f30 !important;
+}
+
+.wp-saint-error-msg li {
+  margin-top: 6px;
+}
+
+.wp-saint-text-center {
+  text-align: center;
+}
+
+.wp-saint-box-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.wp-saint-side-bar-container {
+  margin-bottom: 1.5em;
+  padding: 0;
+}
+
+@media screen and (max-width: 420px) {
+  .wp-saint-body {
+    grid-gap-horizontal: 0;
+    grid-template-columns: 1fr;
+  }
+  .wp-saint-box-container {
+    width: 100%;
+  }
+}

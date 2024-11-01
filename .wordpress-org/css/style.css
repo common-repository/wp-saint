@@ -1,0 +1,179 @@
+/* This is our css file */
+
+
+.SAINT_table td {
+	padding-right: 24px;
+}
+.SAINT_table {
+    margin-top: 7px;
+	margin-bottom: 15px;
+}
+.SAINT_menu{
+	width:25%;
+	float:left;
+	min-height: 663px;
+	border-left: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.SAINT_menuCont{
+	width:75%;
+	float:left;
+}	
+.SAINT_menuCont {
+    min-height: 663px;
+    border:1px solid #e0e0e0;
+    
+}	
+.SAINT_menu ul li{
+	padding: 5px 8px;
+	border-bottom: 1px solid #e0e0e0;
+}
+#SAINT_generalOne{
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: block;
+	font-family: Verdana, Arial, Helvetica, "Lucida Console", sans-serif;
+}	
+#SAINT_generalOne p{
+	text-align: justify;
+}	
+#SAINT_generalOne label{
+	font-family: Verdana, Arial, Helvetica, 
+     "Lucida Console", sans-serif;
+}
+.SAINT_chooseTwo{
+	padding-top:10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.SAINT_chooseTwo p{
+	font-family: Verdana, Arial, Helvetica, "Lucida Console", sans-serif;
+
+}
+.SAINT_chooseTwo label{
+	font-family: Verdana, Arial, Helvetica, "Lucida Console", sans-serif;
+	line-height: 22px;
+}
+.data_button{
+	font-weight: 700;
+	color: black;
+}
+#SAINT_chooseTwo{
+	display:none;
+}
+.SAINT_menu ul li a{
+	text-decoration:none;
+	color:#2f2f2f;
+}
+.SAINT_menu ul li a:hover{
+	text-decoration:none;
+}
+
+@media screen and (max-width: 750px) {
+    .SAINT_menu {
+        width:100%;
+    }
+	.SAINT_menuCont{
+		width:100%;
+	}
+}
+
+.SAINT_dashboard {
+   /* margin-left: -20px;*/
+}
+.SAINT_header{
+	height: 120px;
+	margin-top: 10px;
+	background-repeat: repeat-x;	
+}
+.SAINT_head{
+	float:right;
+	height:100px;
+	width:300px;
+	margin-left:1px;
+}
+
+label{
+	font-family: initial;
+}
+#SAINT_dataButton{
+	/*font-weight: 700;
+	color:black;
+	border: 1px solid #e0e0e0;
+	box-shadow: 0px 0px 3px 0px #474646;
+    background: #84c2ad;*/
+	font-weight: 700;
+	color: white;
+	background: #207dcc;
+	padding: 3px 18px;
+	border: 0px;
+	border-radius: 20px;
+	font-family: Verdana, Arial, Helvetica, "Lucida Console", sans-serif;
+}
+#SAVE_datalayer {
+    font-weight: 700;
+	color: white;
+	background: #207dcc;
+	padding: 3px 18px;
+	border: 0px;
+	border-radius: 20px;
+	font-family: Verdana, Arial, Helvetica, 
+     "Lucida Console", sans-serif;
+}
+
+.SAINT_switch {
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 10px;
+}
+
+.SAINT_switch input {display:none;}
+
+.SAINT_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #bababa;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.SAINT_slider:before {
+	position: absolute;
+	content: "";
+	height: 10px;
+	width: 10px;
+	left: 0px;
+	bottom: 0px;
+	background-color: #fff;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .SAINT_slider {
+  background-color: #2DA23A;
+}
+
+input:focus + .SAINT_slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .SAINT_slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded SAINT_sliders */
+.SAINT_slider.SAINT_round {
+  border-radius: 34px;
+}
+
+.SAINT_slider.SAINT_round:before {
+  border-radius: 50%;
+}
